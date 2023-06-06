@@ -1,0 +1,9 @@
+* {
+    margin: 0px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    font-family: "Lato";
+}
+*::-webkit-scrollbar {
+    display: none;
+}

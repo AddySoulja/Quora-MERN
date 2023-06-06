@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "logo";
+    src: url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+}
+
+@font-face {
+    font-family: "poppins";
+    src: url('https://fonts.googleapis.com/css?family=Poppins');
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #F1F2F2;
+    font-family: "poppins";
+}
+
+.navbar-layout {
+    width: 100vw;
+    height: 6vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.logo-layout {
+    color: #BC3430;
+    cursor: pointer;
+    margin-left: 100px;
+    margin-right: 50px;
+    font-size: 24px;
+    font-weight: 1000;
+    font-family: "logo";
+}
+
+.navigation {
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 3vw;
+}
+
+.nav-link:hover {
+    background-color: #0a0a0a37;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.iconColor {
+    font-size: 19px;
+    color: #BC3430;
+}
+
+.search-layout {
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.controls-layout {
+    height: 5vh;
+    width: 30vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 100px;
+    gap: 10px;
+    font-size: 13px;
+}
+
+
+/* Buttons */
+.btn {
+    height: 3.5vh;
+    width: 4vw;
+    background-color: #BC3430;
+    color: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #9e2a26;
+
+}
+
+.menu-bar {
+    font-size: 14px;
+}
