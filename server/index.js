@@ -36,3 +36,5 @@ const port = process.env.PORT || 5000;
 app.use(errorHandler);
 app.use(notFoundHandler);
 app.listen(port, () => console.log(`Server started...: ${port}`));
+
+module.exports = app;
