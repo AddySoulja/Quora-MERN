@@ -22,16 +22,16 @@ app.use(cors());
 app.use("/api/users", userRoutes);
 app.use("/api/posts", postRoutes);
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(path.resolve(), "/frontend/dist")));
-  app.get("*", (req, res) =>
-    res.sendFile(path.resolve(path.resolve(), "client", "dist", "index.html"))
-  );
-} else {
-  app.get("/", (req, res) => {
-    res.status(200).send(`Quora Server running...`);
-  });
-}
+// if (process.env.NODE_ENV === "production") {
+//   app.use(express.static(path.join(path.resolve(), "/frontend/dist")));
+//   app.get("*", (req, res) =>
+//     res.sendFile(path.resolve(path.resolve(), "client", "dist", "index.html"))
+//   );
+// } else {
+//   app.get("/", (req, res) => {
+//     res.status(200).send(`Quora Server running...`);
+//   });
+// }
 
 app.use(errorHandler);
 app.use(notFoundHandler);
