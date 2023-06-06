@@ -10,8 +10,9 @@ import userRoutes from "./routes/userRoutes.js";
 import postRoutes from "./routes/postRoutes.js";
 import connectDb from "./databaseConfig/configDb.js";
 
-connectDb();
 const app = express();
+const port = process.env.PORT || 5000;
+connectDb();
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -32,7 +33,6 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-const port = process.env.PORT || 5000;
 app.use(errorHandler);
 app.use(notFoundHandler);
 app.listen(port, () => console.log(`Server started...: ${port}`));
