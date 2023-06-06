@@ -40,4 +40,4 @@ app.use(errorHandler);
 app.use(notFoundHandler);
 app.listen(port, () => console.log(`Server started...: ${port}`));
 
-module.exports = app;
+export default app;
