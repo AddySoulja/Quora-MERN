@@ -15,11 +15,14 @@ const PostForm = ({ fetchPosts }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await fetch("/api/posts/edit", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ id: userInfo._id, ...post }),
-    });
+    const res = await fetch(
+      "https://quora-clone-server.vercel.app/api/posts/edit",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id: userInfo._id, ...post }),
+      }
+    );
     fetchPosts();
     console.log(await res.json());
     setPost(postFormat);
