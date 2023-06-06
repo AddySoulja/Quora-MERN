@@ -24,7 +24,7 @@ const Dashboard = () => {
   }, [width]);
 
   const fetchPosts = useCallback(async () => {
-    const res = await fetch("/api/posts");
+    const res = await fetch("https://quora-clone-server.vercel.app/api/posts");
     const data = await res.json();
     dispatch(setPosts([...data.globalPosts]));
   }, [dispatch]);
